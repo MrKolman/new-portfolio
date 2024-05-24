@@ -1,0 +1,22 @@
+.parent {
+    background-color: gray;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.5rem;
+}
+
+.one {
+    background-color: aliceblue;
+    position: sticky;
+    padding: 0.5rem;
+}
+
+.two {
+    background-color: aqua;
+    padding: 0.5rem;
+}
+
+.three {
+    background-color: blueviolet;
+    padding: 0.5rem;
+}

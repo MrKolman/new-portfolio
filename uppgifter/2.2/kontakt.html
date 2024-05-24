@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M2</title>
+    <link rel="stylesheet" href="/uppgifter/2.2/kontakt.css">
+</head>
+<body>
+    <header>
+      <h1>Kontakt</h1>
+        <ol id="primary-navigation" class="primary-navigation">
+            <li><a class="link-header" href="/index.html">Hem</a></li>
+            <li><a class="link-header selected" href="/uppgifter/2.2/historia.html">Historia</a></li>
+            <li><a class="link-header" href="#">Dom</a></li>
+            <li><a class="link-header" href="#">Grunderna</a></li>
+            <li><a class="link-header" href="#">Läs mer här</a></li>
+            <li><a class="link-header" href="#">Om mig</a></li>
+            <li><a class="link-header" href="/uppgifter/2.2/kontakt.html">Kontakt</a></li>
+        </ol>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <h1>Skicka mig ett mejl!</h1>
+                <form target action="https://formsubmit.co/alfred.kallberg@elev.ga.ntig.se" method="POST">
+                  <div class="form-group">
+                    <div class="form-row">
+                      <div class="col">
+                        <label for="name">Ditt Namn:</label>
+                        <input id="name" type="text" name="name" class="form-control" placeholder="Full Name" required>
+                      </div>
+                      <div class="col">
+                        <label for="email">Din Email:</label>
+                        <input id="email" type="email" name="email" class="form-control" placeholder="Email Address" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Ditt Medelande</label>
+                    <textarea id="message" placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                </form>
+              </div>
+        </section>
+    </main>
+</body>
+</html>

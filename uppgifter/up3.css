@@ -1,0 +1,27 @@
+h1,
+p {
+  color:black ;
+}
+
+.header {
+  display: flex;
+  background-color: whitesmoke;
+  border: 5px outset gray;
+  gap: 1rem;
+}
+
+.logo {
+  width: 80px;
+  object-fit: contain;
+  padding-left: 15px;
+}
+
+.primary-navigation {
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+
+

@@ -1,0 +1,77 @@
+.parent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    height: 25rem;
+    width: 25rem;
+    border: 1rem solid;
+    border-color: deepskyblue;
+}
+
+.header {
+  display: flex;
+  background-color: whitesmoke;
+  border: 5px outset gray;
+  gap: 1rem;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.child {
+    height: 50%;
+    width: 50%;
+    animation: left-to-right 3s ease-in forwards infinite;
+}
+
+.parent:hover .child{ 
+   animation-play-state: paused;
+}
+
+@keyframes left-to-right {
+
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+
+    12.5% {
+        transform: translateY(50%) translateX(50%);
+    }
+
+    25% {
+        transform: translateX(0%) translateY(100%);
+    }
+
+    37.5% {
+        transform: translateX(50%) translateY(50%);
+    }
+
+    50% {
+        transform: translateX(100%) translateY(100%);
+    }
+
+    62.5% {
+        transform: translateX(50%) translateY(50%);
+    }
+
+    75% {
+        transform: translateX(100%) translateY(0%);
+    }
+
+    87.5% {
+        transform: translateX(50%) translateY(50%);
+    }
+
+    100% {
+        transform: translateX(0%) translateY(0%);
+    }
+}

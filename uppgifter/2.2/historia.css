@@ -1,0 +1,245 @@
+/*saker som involverar hela dokumentet*/
+
+html {
+    scroll-padding: 8rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+/*header*/
+
+header {
+    position: sticky;
+    top: 0;
+    inset: 0;
+    z-index: 99;
+}
+
+h1 {
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.top-header {   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4682b4;
+    padding-inline: 2rem;
+}
+
+p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h1-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.m2-logo {
+    max-width: 4rem;
+    height: max-content;
+}
+
+/*header links*/
+
+.primary-navigation {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.link-header {
+    color: black;
+    text-decoration: none;
+}
+
+.link-header:hover {
+    color: black;
+}
+
+/*main*/
+
+main {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    max-width: 70%;
+    margin-inline: auto;
+    margin-bottom: 7rem;
+}
+
+section {
+    padding-top: 4rem;
+    width: 90%;
+    z-index: 0;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 0.5rem;
+}
+
+.grid-row:nth-child(odd) {
+    background: whitesmoke;
+}
+
+.text-columns {
+    column-count: 2;
+    column-gap: auto;
+}
+
+/*aside*/
+
+.special {
+    margin-top: 1rem;
+}
+
+aside {
+    place-self: start;
+    position: sticky;
+    top: 15%;
+    margin-top: 8rem;
+    background-color: aliceblue;
+    padding-inline: 1.5rem;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+aside:hover {
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(219, 219, 219);
+    scale: 1.04;
+}
+
+/*aside links*/
+/*Link som tar dig till HTML delen eller CSS delen*/
+
+.aside-links {
+    line-height: 2;
+}
+
+.aside-nav {
+    list-style: upper-roman;
+    padding: 1rem;
+}
+
+.aside-nav-link {
+    color: black;
+}
+
+.aside-nav-link:hover {
+    color: black;
+}
+
+.aside-nav-link:active {
+    color: black;
+}
+
+/*link till olika delar av HTML länkarna eller CSS länkarna*/
+
+.link-main {
+    color: #2f4f4f;
+}
+
+.link-main:hover {
+    color: black;
+}
+
+.link-main:active {
+    color: black;
+}
+
+/*Responsivitet*/
+
+@media(width<480px) {
+
+    .hamburger-button {
+        background-color: #4682b4;
+        border: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    .history-item {
+        background-color: aliceblue;
+        padding: 1rem;
+        margin-bottom: 1.5rem;       
+        border-radius: 10px; 
+    }
+
+    .text-columns {
+        column-count: 1;
+        column-gap: auto;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .primary-navigation {
+        position: fixed;
+        inset: 5rem 0 5rem 14rem;
+
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        flex-direction: column;
+       
+        padding: 2rem 2rem;
+       
+        border-radius: 5px;
+        background: rgb(225, 241, 255);
+        opacity: 0;
+
+
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out,
+                    opacity 250ms ease-in-out;
+    }
+
+
+    .primary-navigation.open {
+        transform: translateX(0);
+        opacity: 1;
+   }
+
+   .link-header {
+        font-size: 24px;
+   }
+}
+
+@media(width>480px) {
+
+    .hamburger-button {
+        display: none;
+    }
+}
