@@ -17,7 +17,7 @@ a {
 img {
     display: block;
     object-fit: cover;
-    max-width: 100%;
+    max-width: 15rem;
 }
 
 a:hover {
@@ -58,7 +58,7 @@ p {
 }
 
 .m2-logo {
-    max-width: 4rem;
+    max-width: 3rem;
     height: max-content;
 }
 
